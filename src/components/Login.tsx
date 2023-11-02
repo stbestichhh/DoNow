@@ -8,6 +8,7 @@ import {
 	Platform,
 	Animated,
 	ActivityIndicator,
+	Alert,
 } from 'react-native';
 import { LoginStyle } from '../styles';
 import { fadeIn, fadeOut, btnstyles, fanimated, sanimated } from '../animatedbtn';
@@ -25,10 +26,9 @@ export const Login = () => {
 		setLoading(true);
 
 		try {
-			const response = await createUserWithEmailAndPassword(auth, email, password);
-			//modal 'registration in sucessful'
+			const response = await createUserWithEmailAndPassword(auth, email, password);			
 		} catch (error) {
-			//modal 'sign up in failed'
+			Alert.alert('⚠️', 'Registraction failed');
 		} finally {
 			setLoading(false);
 		}
@@ -40,7 +40,7 @@ export const Login = () => {
 		try {
 			const response = await signInWithEmailAndPassword(auth, email, password);
 		} catch (error) {
-			//modal 'login failed'
+			Alert.alert('⚠️', 'Login failed');
 		} finally {
 			setLoading(false);
 		}

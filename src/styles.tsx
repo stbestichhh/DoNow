@@ -27,6 +27,7 @@ export const LoginStyle = StyleSheet.create({
         justifyContent: 'center',                
     },    
     btnText: {
-
+      color: 'white',
+      fontWeight: 'bold'
     }
 });
