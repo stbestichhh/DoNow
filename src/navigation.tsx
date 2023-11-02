@@ -21,7 +21,7 @@ const Navigate = () => {
 		<NavigationContainer>
 			<Stack.Navigator initialRouteName='Login'>
 				{user ? (
-					<Stack.Screen name='List' component={List} />
+					<Stack.Screen name='List' component={List} options={{headerShown: false}}/>
 				) : (
 					<Stack.Screen name='Login' component={Login} options={{ headerShown: false }} />
 				)}

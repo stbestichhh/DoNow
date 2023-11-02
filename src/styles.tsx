@@ -31,3 +31,18 @@ export const LoginStyle = StyleSheet.create({
       fontWeight: 'bold'
     }
 });
+
+export const ListStyle = StyleSheet.create({
+    container:{
+
+    },
+    titleContainer: {
+        flexDirection: 'row',
+        margin: 30,        
+    },
+    title: {        
+        fontSize: 30,
+        fontWeight: '800',        
+        color: '#89C34E'        
+    },    
+})
