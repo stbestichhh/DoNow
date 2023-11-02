@@ -34,15 +34,30 @@ export const LoginStyle = StyleSheet.create({
 
 export const ListStyle = StyleSheet.create({
     container:{
-
+        flexDirection: 'row',
+        alignContent: 'center',
+        padding: 20,
+        marginVertical: 4,
+        borderRadius: 10,
+        backgroundColor: 'white'
     },
     titleContainer: {
         flexDirection: 'row',
-        margin: 30,        
+        margin: 20,        
     },
     title: {        
         fontSize: 30,
         fontWeight: '800',        
         color: '#89C34E'        
     },    
+    todoItem: {
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    todoText: {
+        flex: 1,
+        paddingHorizontal: 10,
+        fontSize: 20
+    }
 })
