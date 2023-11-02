@@ -1,4 +1,4 @@
-import { Text, SafeAreaView, View, KeyboardAvoidingView } from 'react-native';
+import { Text, SafeAreaView, View, KeyboardAvoidingView, TextInput } from 'react-native';
 import { LoginStyle } from '../styles';
 
 export const Login = () => {
@@ -8,6 +8,10 @@ export const Login = () => {
 				<Text style={[LoginStyle.title, { color: '#CD5C5C' }]}>Do</Text>
 				<Text style={LoginStyle.title}>Now</Text>
 			</SafeAreaView>
+			<View style={LoginStyle.form}>
+				<TextInput style={LoginStyle.input} placeholder='Enter email' autoCapitalize='none' />
+				<TextInput style={LoginStyle.input} placeholder='Enter password' autoCapitalize='none'/>
+			</View>
 		</KeyboardAvoidingView>
 	);
 };

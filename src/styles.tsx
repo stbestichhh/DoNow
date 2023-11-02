@@ -4,13 +4,22 @@ export const LoginStyle = StyleSheet.create({
 	container: {
         flexDirection: 'row',
         justifyContent: 'center',
-        marginTop: 150
+        marginTop: 300,        
     },
-	title: {
-        padding: 5,        
+	title: {                
         fontSize: 40,
         fontWeight: 'bold',
-        color: '#32CD32'
+        color: '#32CD32',        
     },
-	input: {},
+	form: {
+        justifyContent: 'center',
+        margin: 20        
+    },
+    input: {
+        backgroundColor: 'white',
+        borderWidth: 0,
+        borderRadius: 10,
+        margin: 5,
+        padding: 15
+    }
 });
