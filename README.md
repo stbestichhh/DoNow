@@ -7,9 +7,9 @@ DoNow is a simple React Native todo list app.
 
 ## Screenshots
 
-![Login page](/demo/login.png)
-![Add todo](/demo/add.png)
-![List page](/demo/list.png)
+![Login page](/demo/login.jpg)
+![Add todo](/demo/add.jpg)
+![List page](/demo/list.jpg)
 
 ## Installation
 
