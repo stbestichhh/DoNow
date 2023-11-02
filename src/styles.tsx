@@ -4,7 +4,7 @@ export const LoginStyle = StyleSheet.create({
 	container: {
         flexDirection: 'row',
         justifyContent: 'center',
-        marginTop: 300,        
+        marginTop: 300,              
     },
 	title: {                
         fontSize: 40,
@@ -13,13 +13,20 @@ export const LoginStyle = StyleSheet.create({
     },
 	form: {
         justifyContent: 'center',
-        margin: 20        
+        margin: 20,    
+        marginTop: 30         
     },
     input: {
-        backgroundColor: 'white',
-        borderWidth: 0,
+        backgroundColor: 'white',     
         borderRadius: 10,
         margin: 5,
         padding: 15
+    },
+    buttonsContainer: {
+        flexDirection: 'row',
+        justifyContent: 'center',                
+    },    
+    btnText: {
+
     }
 });
