@@ -59,7 +59,7 @@ const List = () => {
 			title: todo,
 			done: false,
 		});
-		setTodo('');
+		setTodo('');    
 	};
 
 	const renderTodo = ({ item }: any) => {
