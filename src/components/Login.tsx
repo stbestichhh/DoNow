@@ -2,10 +2,8 @@ import {
 	Text,
 	SafeAreaView,
 	View,
-	KeyboardAvoidingView,
 	TextInput,
 	Pressable,
-	Platform,
 	Animated,
 	ActivityIndicator,
 	Alert,
@@ -26,7 +24,7 @@ export const Login = () => {
 		setLoading(true);
 
 		try {
-			const response = await createUserWithEmailAndPassword(auth, email, password);			
+			const response = await createUserWithEmailAndPassword(auth, email, password);
 		} catch (error) {
 			Alert.alert('⚠️', 'Registraction failed');
 		} finally {
