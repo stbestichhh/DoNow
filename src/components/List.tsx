@@ -6,7 +6,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 const List = () => {
 	return (
 		<SafeAreaView>
-			<TouchableOpacity style={ListStyle.titleContainer}>
+			<TouchableOpacity style={ListStyle.titleContainer} onPress={() => {}}>
 				<Text style={ListStyle.title}>My Todo's</Text>
 				<Ionicons name='add' size={24} color='#89C34E' />
 			</TouchableOpacity>
