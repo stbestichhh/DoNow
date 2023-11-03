@@ -12,9 +12,9 @@ DoNow is a simple React Native todo list app.
 ## Installation
 
 ```bash
-	cd DoNow
-	npm run install
+	cd DoNow 
 ```
+[Open install.sh](install.sh) and run all the commands.
 
 ## Authors
 
