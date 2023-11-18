@@ -5,8 +5,9 @@ import List from './components/List';
 import { useEffect, useState } from 'react';
 import { User, onAuthStateChanged } from 'firebase/auth';
 import { FIREBASE_AUTH } from '../firebaseConfig';
+import { RootStackParamList } from './nav-types';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const Navigate = () => {
 	const [user, setUser] = useState<User | null>(null);
